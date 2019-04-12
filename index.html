@@ -7,16 +7,145 @@
         <link rel="stylesheet" href="css/uikit.min.css" />
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
+        <script src="js/clipboard.min.js"></script>
+  
     </head>
     <body>
+      <script>
+          new ClipboardJS('.uk-button');
+        </script>
         <nav class="uk-navbar-container" uk-navbar>
             <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#">A3CN Loadouts</a>
                 <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href=""></a></li>
-                    <li class="uk-parent"><a href=""></a></li>
-                    <li><a href=""></a></li>
+                  <li class="uk-active"><a href="#">Vibora</a></li>
                 </ul>
             </div>
         </nav>
+
+            <div class="uk-section">
+              <div class="uk-container">
+                  <div class="uk-child-width-5-5" uk-grid>
+                      <div>
+                          <div class="uk-panel uk-panel-box">
+                            <h2>Instruções</h2>
+                            Basta escolher qual classe você deseja jogar e clicar no botão copiar.<br>
+                            Depois, dentro do Arma 3 já no Arsenal, clique no botão <strong>IMPORT</strong> que fica no canto direito inferior.<br><br>
+                            Importante: Armas e munições não são inclusos nos loadouts com excessão do anti-tank.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="uk-section">
+                <div class="uk-container">
+                  <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                        <dl>
+                          <dt>Anti-tank</dt>
+                        </dl>
+                        <button class="uk-button uk-button-primary uk-button-small" data-clipboard-text='removeAllWeapons this; removeAllItems this; removeAllAssignedItems this; removeUniform this; removeVest this; removeBackpack this; removeHeadgear this; removeGoggles this; this forceAddUniform "A3CN_CombatUniform_dtp"; for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";}; for "_i" from 1 to 6 do {this addItemToUniform "ACE_quikclot";}; for "_i" from 1 to 4 do {this addItemToUniform "ACE_elasticBandage";}; for "_i" from 1 to 2 do {this addItemToUniform "ACE_CableTie";}; this addItemToUniform "ACE_epinephrine"; this addItemToUniform "ACE_IR_Strobe_Item"; this addItemToUniform "ACE_Flashlight_XL50"; this addItemToUniform "ACE_microDAGR"; this addItemToUniform "ACRE_PRC152"; this addItemToUniform "ACRE_PRC343"; this addVest "A3CN_PlateCarrier2_dnp"; this addItemToVest "MineDetector"; this addItemToVest "ACE_Clacker"; for "_i" from 1 to 2 do {this addItemToVest "ACE_morphine";}; this addItemToVest "ACE_RangeCard"; for "_i" from 1 to 2 do {this addItemToVest "adv_aceSplint_splint";}; for "_i" from 1 to 2 do {this addItemToVest "ACE_tourniquet";}; for "_i" from 1 to 3 do {this addItemToVest "ACE_fieldDressing";}; this addBackpack "A3CN_Kitbag_dtp"; for "_i" from 1 to 2 do {this addItemToBackpack "MRAWS_HEAT_F";}; this addHeadgear "A3CN_HelmetB_dnp"; this addWeapon "launch_MRAWS_sand_F"; this addWeapon "ACE_Vector"; this linkItem "ItemMap"; this linkItem "ItemCompass"; this linkItem "ItemWatch"; this linkItem "ItemRadioAcreFlagged"; this linkItem "ItemcTab"; this linkItem "A3_GPNVG18_REC_BLK_TI"; this setFace "WhiteHead_05"; this setSpeaker "ace_novoice";'><span uk-icon="icon: pull"></span> Copiar</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                        <dl>
+                          <dt>Engenheiro</dt>
+                        </dl>
+                        <button class="uk-button uk-button-primary uk-button-small" data-clipboard-text='comment "Exported from Arsenal by 1Lt.Bruno"; comment "Remove existing items"; removeAllWeapons this; removeAllItems this; removeAllAssignedItems this; removeUniform this; removeVest this; removeBackpack this; removeHeadgear this; removeGoggles this; comment "Add containers"; this forceAddUniform "A3CN_CombatUniform_dtp"; for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";}; for "_i" from 1 to 6 do {this addItemToUniform "ACE_quikclot";}; for "_i" from 1 to 4 do {this addItemToUniform "ACE_elasticBandage";}; for "_i" from 1 to 2 do {this addItemToUniform "ACE_CableTie";}; this addItemToUniform "ACE_EarPlugs"; this addItemToUniform "ACE_epinephrine"; this addItemToUniform "ACE_IR_Strobe_Item"; this addItemToUniform "ACE_Flashlight_XL50"; this addItemToUniform "ACE_microDAGR"; this addItemToUniform "ACRE_PRC152"; this addItemToUniform "ACRE_PRC343"; this addVest "A3CN_PlateCarrier2_dnp"; this addItemToVest "MineDetector"; this addItemToVest "ACE_Clacker"; for "_i" from 1 to 2 do {this addItemToVest "ACE_morphine";}; this addItemToVest "ACE_RangeCard"; for "_i" from 1 to 2 do {this addItemToVest "adv_aceSplint_splint";}; for "_i" from 1 to 2 do {this addItemToVest "ACE_tourniquet";}; this addBackpack "A3CN_AssaultPack_dtp"; this addItemToBackpack "ToolKit"; this addItemToBackpack "ACE_EntrenchingTool"; this addItemToBackpack "ACE_DefusalKit"; this addItemToBackpack "ACE_M26_Clacker"; this addHeadgear "A3CN_HelmetB_dnp"; comment "Add weapons"; this addWeapon "Rangefinder"; comment "Add items"; this linkItem "ItemMap"; this linkItem "ItemCompass"; this linkItem "ItemWatch"; this linkItem "ItemRadioAcreFlagged"; this linkItem "ItemcTab"; this linkItem "A3_GPNVG18_REC_BLK_TI"; comment "Set identity"; this setFace "WhiteHead_05"; this setSpeaker "ace_novoice";
+'><span uk-icon="icon: pull"></span> Copiar</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                        <dl>
+                          <dt>Explosivista</dt>
+                        </dl>
+                        <button class="uk-button uk-button-primary uk-button-small" data-clipboard-text='comment "Exported from Arsenal by 1Lt.Bruno"; comment "Remove existing items"; removeAllWeapons this; removeAllItems this; removeAllAssignedItems this; removeUniform this; removeVest this; removeBackpack this; removeHeadgear this; removeGoggles this; comment "Add containers"; this forceAddUniform "A3CN_CombatUniform_dtp"; this addItemToUniform "ACRE_PRC152"; this addItemToUniform "ACRE_PRC343"; for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";}; for "_i" from 1 to 6 do {this addItemToUniform "ACE_quikclot";}; for "_i" from 1 to 4 do {this addItemToUniform "ACE_elasticBandage";}; for "_i" from 1 to 2 do {this addItemToUniform "ACE_CableTie";}; this addItemToUniform "ACE_EarPlugs"; this addItemToUniform "ACE_epinephrine"; this addItemToUniform "ACE_IR_Strobe_Item"; this addItemToUniform "ACE_Flashlight_XL50"; this addItemToUniform "ACE_microDAGR"; this addVest "A3CN_PlateCarrier2_dnp"; this addItemToVest "MineDetector"; this addItemToVest "ACE_Clacker"; for "_i" from 1 to 2 do {this addItemToVest "ACE_morphine";}; this addItemToVest "ACE_RangeCard"; for "_i" from 1 to 2 do {this addItemToVest "adv_aceSplint_splint";}; for "_i" from 1 to 2 do {this addItemToVest "ACE_tourniquet";}; for "_i" from 1 to 3 do {this addItemToVest "ACE_fieldDressing";}; this addBackpack "A3CN_AssaultPack_dtp"; this addItemToBackpack "ACE_M26_Clacker"; this addItemToBackpack "ACE_DefusalKit"; this addItemToBackpack "ACE_EntrenchingTool"; for "_i" from 1 to 2 do {this addItemToBackpack "DemoCharge_Remote_Mag";}; this addItemToBackpack "SatchelCharge_Remote_Mag"; this addHeadgear "A3CN_HelmetB_dnp"; comment "Add weapons"; this addWeapon "Rangefinder"; comment "Add items"; this linkItem "ItemMap"; this linkItem "ItemCompass"; this linkItem "ItemWatch"; this linkItem "ItemRadioAcreFlagged"; this linkItem "ItemcTab"; this linkItem "A3_GPNVG18_REC_BLK_TI"; comment "Set identity"; this setFace "WhiteHead_05"; this setSpeaker "ace_novoice";'><span uk-icon="icon: pull"></span> Copiar</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                        <dl>
+                          <dt>Médico</dt>
+                        </dl>
+                        <button class="uk-button uk-button-primary uk-button-small" data-clipboard-text='comment "Exported from Arsenal by 1Lt.Bruno"; comment "Remove existing items"; removeAllWeapons this; removeAllItems this; removeAllAssignedItems this; removeUniform this; removeVest this; removeBackpack this; removeHeadgear this; removeGoggles this; comment "Add containers"; this forceAddUniform "A3CN_CombatUniform_dtp"; this addItemToUniform "ACRE_PRC152"; this addItemToUniform "ACRE_PRC343"; for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";}; for "_i" from 1 to 6 do {this addItemToUniform "ACE_quikclot";}; for "_i" from 1 to 4 do {this addItemToUniform "ACE_elasticBandage";}; for "_i" from 1 to 2 do {this addItemToUniform "ACE_CableTie";}; this addItemToUniform "ACE_EarPlugs"; this addItemToUniform "ACE_epinephrine"; this addItemToUniform "ACE_IR_Strobe_Item"; this addItemToUniform "ACE_Flashlight_XL50"; this addItemToUniform "ACE_microDAGR"; this addVest "A3CN_PlateCarrier2_dnp"; this addItemToVest "MineDetector"; this addItemToVest "ACE_Clacker"; for "_i" from 1 to 2 do {this addItemToVest "ACE_morphine";}; this addItemToVest "ACE_RangeCard"; for "_i" from 1 to 2 do {this addItemToVest "adv_aceSplint_splint";}; for "_i" from 1 to 2 do {this addItemToVest "ACE_tourniquet";}; this addBackpack "A3CN_Kitbag_dtp"; for "_i" from 1 to 14 do {this addItemToBackpack "ACE_fieldDressing";}; for "_i" from 1 to 14 do {this addItemToBackpack "ACE_quikclot";}; for "_i" from 1 to 6 do {this addItemToBackpack "ACE_elasticBandage";}; this addItemToBackpack "adv_aceCPR_AED"; this addItemToBackpack "KAT_CrossPanel"; this addItemToBackpack "ACE_bodyBag"; for "_i" from 1 to 9 do {this addItemToBackpack "ACE_epinephrine";}; for "_i" from 1 to 8 do {this addItemToBackpack "ACE_morphine";}; this addItemToBackpack "ACE_personalAidKit"; for "_i" from 1 to 2 do {this addItemToBackpack "ACE_salineIV";}; for "_i" from 1 to 2 do {this addItemToBackpack "ACE_salineIV_500";}; for "_i" from 1 to 2 do {this addItemToBackpack "ACE_salineIV_250";}; for "_i" from 1 to 6 do {this addItemToBackpack "adv_aceSplint_splint";}; this addItemToBackpack "ACE_surgicalKit"; for "_i" from 1 to 2 do {this addItemToBackpack "ACE_IR_Strobe_Item";}; this addHeadgear "A3CN_HelmetB_dnp"; comment "Add weapons"; this addWeapon "Rangefinder"; comment "Add items"; this linkItem "ItemMap"; this linkItem "ItemCompass"; this linkItem "ItemWatch"; this linkItem "ItemRadioAcreFlagged"; this linkItem "ItemcTab"; this linkItem "A3_GPNVG18_REC_BLK_TI"; comment "Set identity"; this setFace "WhiteHead_05"; this setSpeaker "ace_novoice";'><span uk-icon="icon: pull"></span> Copiar</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                        <dl>
+                          <dt>Piloto</dt>
+                        </dl>
+                        <button class="uk-button uk-button-primary uk-button-small" data-clipboard-text='comment "Exported from Arsenal by 1Lt.Bruno"; comment "Remove existing items"; removeAllWeapons this; removeAllItems this; removeAllAssignedItems this; removeUniform this; removeVest this; removeBackpack this; removeHeadgear this; removeGoggles this; comment "Add containers"; this forceAddUniform "A3CN_HeliPilotCoveralls_dtp"; for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";}; for "_i" from 1 to 6 do {this addItemToUniform "ACE_quikclot";}; for "_i" from 1 to 4 do {this addItemToUniform "ACE_elasticBandage";}; for "_i" from 1 to 2 do {this addItemToUniform "ACE_CableTie";}; this addItemToUniform "ACE_EarPlugs"; this addItemToUniform "ACE_epinephrine"; this addItemToUniform "ACE_IR_Strobe_Item"; this addItemToUniform "ACE_Flashlight_XL50"; this addItemToUniform "ACE_microDAGR"; this addItemToUniform "ACRE_PRC152"; this addItemToUniform "ACRE_PRC343"; this addVest "A3CN_PlateCarrier1_dnp"; this addItemToVest "MineDetector"; this addItemToVest "ACE_Clacker"; for "_i" from 1 to 2 do {this addItemToVest "ACE_morphine";}; this addItemToVest "ACE_RangeCard"; for "_i" from 1 to 2 do {this addItemToVest "adv_aceSplint_splint";}; for "_i" from 1 to 2 do {this addItemToVest "ACE_tourniquet";}; this addHeadgear "A3CN_PilotHelmetHeli_dnp"; comment "Add weapons"; this addWeapon "Rangefinder"; comment "Add items"; this linkItem "ItemMap"; this linkItem "ItemCompass"; this linkItem "ItemWatch"; this linkItem "ItemRadioAcreFlagged"; this linkItem "ItemcTab"; this linkItem "A3_GPNVG18_REC_BLK_TI"; comment "Set identity"; this setFace "WhiteHead_05"; this setSpeaker "ace_novoice";'><span uk-icon="icon: pull"></span> Copiar</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="uk-section">
+                <div class="uk-container">
+                  <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                        <dl>
+                          <dt>Reconhecimento</dt>
+                        </dl>
+                        <button class="uk-button uk-button-primary uk-button-small" data-clipboard-text='comment "Exported from Arsenal by 1Lt.Bruno"; comment "Remove existing items"; removeAllWeapons this; removeAllItems this; removeAllAssignedItems this; removeUniform this; removeVest this; removeBackpack this; removeHeadgear this; removeGoggles this; comment "Add containers"; this forceAddUniform "A3CN_CombatUniform_dtp"; for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";}; for "_i" from 1 to 6 do {this addItemToUniform "ACE_quikclot";}; for "_i" from 1 to 4 do {this addItemToUniform "ACE_elasticBandage";}; for "_i" from 1 to 2 do {this addItemToUniform "ACE_CableTie";}; this addItemToUniform "ACE_EarPlugs"; this addItemToUniform "ACE_epinephrine"; this addItemToUniform "ACE_IR_Strobe_Item"; this addItemToUniform "ACE_Flashlight_XL50"; this addItemToUniform "ACE_microDAGR"; this addItemToUniform "ACRE_PRC152"; this addItemToUniform "ACRE_PRC343"; this addVest "A3CN_PlateCarrier2_dnp"; this addItemToVest "MineDetector"; this addItemToVest "ACE_Clacker"; for "_i" from 1 to 2 do {this addItemToVest "ACE_morphine";}; this addItemToVest "ACE_RangeCard"; for "_i" from 1 to 2 do {this addItemToVest "adv_aceSplint_splint";}; for "_i" from 1 to 2 do {this addItemToVest "ACE_tourniquet";}; for "_i" from 1 to 2 do {this addItemToVest "ACE_CableTie";}; this addItemToVest "ACE_MapTools"; this addItemToVest "ACE_Sandbag_empty"; this addBackpack "A3CN_AssaultPack_dtp"; this addItemToBackpack "MRH_BluForTransponder"; this addItemToBackpack "ACE_EntrenchingTool"; for "_i" from 1 to 4 do {this addItemToBackpack "ACE_IR_Strobe_Item";}; this addItemToBackpack "ACE_SpraypaintRed"; this addItemToBackpack "ACE_rope15"; this addItemToBackpack "ACE_Sandbag_empty"; this addItemToBackpack "ACE_UAVBattery"; this addHeadgear "A3CN_HelmetB_dnp"; comment "Add weapons"; this addWeapon "Laserdesignator"; comment "Add items"; this linkItem "ItemMap"; this linkItem "ItemCompass"; this linkItem "ItemWatch"; this linkItem "ItemRadioAcreFlagged"; this linkItem "B_UavTerminal"; this linkItem "A3_GPNVG18_REC_BLK_TI"; comment "Set identity"; this setFace "WhiteHead_05"; this setSpeaker "ace_novoice";'><span uk-icon="icon: pull"></span> Copiar</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                        <dl>
+                          <dt>Reabastecimento</dt>
+                        </dl>
+                        <button class="uk-button uk-button-primary uk-button-small" data-clipboard-text='comment "Exported from Arsenal by 1Lt.Bruno"; comment "Remove existing items"; removeAllWeapons this; removeAllItems this; removeAllAssignedItems this; removeUniform this; removeVest this; removeBackpack this; removeHeadgear this; removeGoggles this; comment "Add containers"; this forceAddUniform "A3CN_CombatUniform_dtp"; for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";}; for "_i" from 1 to 6 do {this addItemToUniform "ACE_quikclot";}; for "_i" from 1 to 4 do {this addItemToUniform "ACE_elasticBandage";}; for "_i" from 1 to 2 do {this addItemToUniform "ACE_CableTie";}; this addItemToUniform "ACE_EarPlugs"; this addItemToUniform "ACE_epinephrine"; this addItemToUniform "ACE_IR_Strobe_Item"; this addItemToUniform "ACE_Flashlight_XL50"; this addItemToUniform "ACE_microDAGR"; this addItemToUniform "ACRE_PRC152"; this addItemToUniform "ACRE_PRC343"; this addVest "A3CN_PlateCarrier2_dnp"; this addItemToVest "MineDetector"; this addItemToVest "ACE_Clacker"; for "_i" from 1 to 2 do {this addItemToVest "ACE_morphine";}; this addItemToVest "ACE_RangeCard"; for "_i" from 1 to 2 do {this addItemToVest "adv_aceSplint_splint";}; for "_i" from 1 to 2 do {this addItemToVest "ACE_tourniquet";}; for "_i" from 1 to 5 do {this addItemToVest "rhs_mag_m67";}; for "_i" from 1 to 4 do {this addItemToVest "ACE_M84";}; for "_i" from 1 to 2 do {this addItemToVest "ACE_M14";}; this addBackpack "B_Bergen_mcamo_F"; for "_i" from 1 to 2 do {this addItemToBackpack "rhs_mag_100Rnd_556x45_M855A1_cmag";}; for "_i" from 1 to 10 do {this addItemToBackpack "1Rnd_HE_Grenade_shell";}; for "_i" from 1 to 10 do {this addItemToBackpack "rhsusf_5Rnd_300winmag_xm2010";}; for "_i" from 1 to 2 do {this addItemToBackpack "ACE_40mm_Flare_white";}; for "_i" from 1 to 2 do {this addItemToBackpack "ACE_40mm_Flare_red";}; for "_i" from 1 to 2 do {this addItemToBackpack "rhs_mag_m713_Red";}; for "_i" from 1 to 2 do {this addItemToBackpack "rhs_mag_m714_White";}; for "_i" from 1 to 6 do {this addItemToBackpack "rhs_mag_an_m8hc";}; for "_i" from 1 to 5 do {this addItemToBackpack "ACE_Chemlight_HiGreen";}; for "_i" from 1 to 2 do {this addItemToBackpack "rhsusf_100Rnd_762x51_m80a1epr";}; for "_i" from 1 to 2 do {this addItemToBackpack "rhsusf_200rnd_556x45_M855_mixed_box";}; for "_i" from 1 to 12 do {this addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag";}; this addHeadgear "A3CN_HelmetB_dnp"; comment "Add weapons"; this addWeapon "Rangefinder"; comment "Add items"; this linkItem "ItemMap"; this linkItem "ItemCompass"; this linkItem "ItemWatch"; this linkItem "ItemRadioAcreFlagged"; this linkItem "ItemcTab"; this linkItem "A3_GPNVG18_REC_BLK_TI"; comment "Set identity"; this setFace "WhiteHead_05"; this setSpeaker "ace_novoice";'><span uk-icon="icon: pull"></span> Copiar</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                        <dl>
+                          <dt>Fuzileiro</dt>
+                        </dl>
+                        <button class="uk-button uk-button-primary uk-button-small" data-clipboard-text='comment "Exported from Arsenal by 1Lt.Bruno"; comment "Remove existing items"; removeAllWeapons this; removeAllItems this; removeAllAssignedItems this; removeUniform this; removeVest this; removeBackpack this; removeHeadgear this; removeGoggles this; comment "Add containers"; this forceAddUniform "A3CN_CombatUniform_dtp"; this addItemToUniform "ACRE_PRC152"; this addItemToUniform "ACRE_PRC343"; for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";}; for "_i" from 1 to 6 do {this addItemToUniform "ACE_quikclot";}; for "_i" from 1 to 4 do {this addItemToUniform "ACE_elasticBandage";}; for "_i" from 1 to 2 do {this addItemToUniform "ACE_CableTie";}; this addItemToUniform "ACE_EarPlugs"; this addItemToUniform "ACE_epinephrine"; this addItemToUniform "ACE_IR_Strobe_Item"; this addItemToUniform "ACE_Flashlight_XL50"; this addItemToUniform "ACE_microDAGR"; this addVest "A3CN_PlateCarrier2_dnp"; this addItemToVest "MineDetector"; this addItemToVest "ACE_Clacker"; for "_i" from 1 to 2 do {this addItemToVest "ACE_morphine";}; this addItemToVest "ACE_RangeCard"; for "_i" from 1 to 2 do {this addItemToVest "adv_aceSplint_splint";}; for "_i" from 1 to 2 do {this addItemToVest "ACE_tourniquet";}; this addHeadgear "A3CN_HelmetB_dnp"; comment "Add weapons"; this addWeapon "Rangefinder"; comment "Add items"; this linkItem "ItemMap"; this linkItem "ItemCompass"; this linkItem "ItemWatch"; this linkItem "ItemRadioAcreFlagged"; this linkItem "ItemcTab"; this linkItem "A3_GPNVG18_REC_BLK_TI"; comment "Set identity"; this setFace "WhiteHead_05"; this setSpeaker "ace_novoice";'><span uk-icon="icon: pull"></span> Copiar</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                        <dl>
+                          <dt>Caçador</dt>
+                        </dl>
+                        <button class="uk-button uk-button-primary uk-button-small" data-clipboard-text='comment "Exported from Arsenal by 1Lt.Bruno"; comment "Remove existing items"; removeAllWeapons this; removeAllItems this; removeAllAssignedItems this; removeUniform this; removeVest this; removeBackpack this; removeHeadgear this; removeGoggles this; comment "Add containers"; this forceAddUniform "A3CN_CombatUniform_dtp"; this addItemToUniform "ACRE_PRC152"; this addItemToUniform "ACRE_PRC343"; for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";}; for "_i" from 1 to 6 do {this addItemToUniform "ACE_quikclot";}; for "_i" from 1 to 4 do {this addItemToUniform "ACE_elasticBandage";}; for "_i" from 1 to 2 do {this addItemToUniform "ACE_CableTie";}; this addItemToUniform "ACE_EarPlugs"; this addItemToUniform "ACE_epinephrine"; this addItemToUniform "ACE_IR_Strobe_Item"; this addItemToUniform "ACE_Flashlight_XL50"; this addItemToUniform "ACE_microDAGR"; this addVest "A3CN_PlateCarrier2_dnp"; this addItemToVest "MineDetector"; this addItemToVest "ACE_Clacker"; for "_i" from 1 to 2 do {this addItemToVest "ACE_morphine";}; this addItemToVest "ACE_RangeCard"; for "_i" from 1 to 2 do {this addItemToVest "adv_aceSplint_splint";}; for "_i" from 1 to 2 do {this addItemToVest "ACE_tourniquet";}; this addItemToVest "ACE_ATragMX"; this addItemToVest "MRH_BluForTransponder"; this addItemToVest "ACE_Kestrel4500"; this addItemToVest "ACE_MapTools"; this addHeadgear "A3CN_HelmetB_dnp"; comment "Add weapons"; this addWeapon "ACE_Vector"; comment "Add items"; this linkItem "ItemMap"; this linkItem "ItemCompass"; this linkItem "ItemWatch"; this linkItem "ItemRadioAcreFlagged"; this linkItem "ItemcTab"; this linkItem "A3_GPNVG18_REC_BLK_TI"; comment "Set identity"; this setFace "WhiteHead_05"; this setSpeaker "ace_novoice";'><span uk-icon="icon: pull"></span> Copiar</button>
+                        </div>
+                    </div>
+                      <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                        <dl>
+                          <dt>Squad leader</dt>
+                        </dl>
+                        <button class="uk-button uk-button-primary uk-button-small" data-clipboard-text='comment "Exported from Arsenal by 1Lt.Bruno"; comment "Remove existing items"; removeAllWeapons this; removeAllItems this; removeAllAssignedItems this; removeUniform this; removeVest this; removeBackpack this; removeHeadgear this; removeGoggles this; comment "Add containers"; this forceAddUniform "A3CN_CombatUniform_dtp"; for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";}; for "_i" from 1 to 6 do {this addItemToUniform "ACE_quikclot";}; for "_i" from 1 to 4 do {this addItemToUniform "ACE_elasticBandage";}; for "_i" from 1 to 2 do {this addItemToUniform "ACE_CableTie";}; this addItemToUniform "ACE_EarPlugs"; this addItemToUniform "ACE_epinephrine"; this addItemToUniform "ACE_IR_Strobe_Item"; this addItemToUniform "ACE_Flashlight_XL50"; this addItemToUniform "ACE_microDAGR"; this addItemToUniform "ACE_Fortify"; this addItemToUniform "ACRE_PRC152"; this addItemToUniform "ACRE_PRC343"; this addVest "A3CN_PlateCarrier2_dnp"; this addItemToVest "MineDetector"; this addItemToVest "ACE_Clacker"; for "_i" from 1 to 2 do {this addItemToVest "ACE_morphine";}; this addItemToVest "ACE_RangeCard"; for "_i" from 1 to 2 do {this addItemToVest "adv_aceSplint_splint";}; for "_i" from 1 to 2 do {this addItemToVest "ACE_tourniquet";}; this addBackpack "tfw_ilbe_dd_d"; this addItemToBackpack "ACRE_PRC117F"; for "_i" from 1 to 2 do {this addItemToBackpack "ACE_M14";}; for "_i" from 1 to 4 do {this addItemToBackpack "ACE_HandFlare_White";}; for "_i" from 1 to 2 do {this addItemToBackpack "rhs_mag_m18_red";}; for "_i" from 1 to 2 do {this addItemToBackpack "SmokeShellGreen";}; for "_i" from 1 to 2 do {this addItemToBackpack "SmokeShellBlue";}; for "_i" from 1 to 4 do {this addItemToBackpack "rhs_mag_an_m8hc";}; this addItemToBackpack "DemoCharge_Remote_Mag"; this addHeadgear "A3CN_HelmetSpecB_dnp"; comment "Add weapons"; this addWeapon "Laserdesignator"; comment "Add items"; this linkItem "ItemMap"; this linkItem "ItemCompass"; this linkItem "ItemWatch"; this linkItem "ItemRadioAcreFlagged"; this linkItem "ItemcTab"; this linkItem "A3_GPNVG18_REC_BLK_TI"; comment "Set identity"; this setFace "WhiteHead_05"; this setSpeaker "ace_novoice";'><span uk-icon="icon: pull"></span> Copiar</button>
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+            <div class="uk-section">
+             <div class="uk-container">
+                <div class="uk-child-width-1-5 uk-text-center" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                        <dl>
+                          <dt>Team leader</dt>
+                        </dl>
+                        <button class="uk-button uk-button-primary uk-button-small" data-clipboard-text='comment "Exported from Arsenal by 1Lt.Bruno"; comment "Remove existing items"; removeAllWeapons this; removeAllItems this; removeAllAssignedItems this; removeUniform this; removeVest this; removeBackpack this; removeHeadgear this; removeGoggles this; comment "Add containers"; this forceAddUniform "A3CN_CombatUniform_dtp"; for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";}; for "_i" from 1 to 6 do {this addItemToUniform "ACE_quikclot";}; for "_i" from 1 to 4 do {this addItemToUniform "ACE_elasticBandage";}; for "_i" from 1 to 2 do {this addItemToUniform "ACE_CableTie";}; this addItemToUniform "ACE_EarPlugs"; this addItemToUniform "ACE_epinephrine"; this addItemToUniform "ACE_IR_Strobe_Item"; this addItemToUniform "ACE_Flashlight_XL50"; this addItemToUniform "ACE_microDAGR"; this addItemToUniform "ACE_Fortify"; this addItemToUniform "ACRE_PRC152"; this addItemToUniform "ACRE_PRC343"; this addVest "A3CN_PlateCarrier2_dnp"; this addItemToVest "MineDetector"; this addItemToVest "ACE_Clacker"; for "_i" from 1 to 2 do {this addItemToVest "ACE_morphine";}; this addItemToVest "ACE_RangeCard"; for "_i" from 1 to 2 do {this addItemToVest "adv_aceSplint_splint";}; for "_i" from 1 to 2 do {this addItemToVest "ACE_tourniquet";}; this addBackpack "A3CN_AssaultPack_dtp"; for "_i" from 1 to 2 do {this addItemToBackpack "ACE_M14";}; for "_i" from 1 to 4 do {this addItemToBackpack "ACE_HandFlare_White";}; for "_i" from 1 to 2 do {this addItemToBackpack "rhs_mag_m18_red";}; for "_i" from 1 to 2 do {this addItemToBackpack "SmokeShellGreen";}; for "_i" from 1 to 2 do {this addItemToBackpack "SmokeShellBlue";}; for "_i" from 1 to 4 do {this addItemToBackpack "rhs_mag_an_m8hc";}; for "_i" from 1 to 2 do {this addItemToBackpack "DemoCharge_Remote_Mag";}; this addHeadgear "A3CN_HelmetSpecB_dnp"; comment "Add weapons"; this addWeapon "Laserdesignator"; comment "Add items"; this linkItem "ItemMap"; this linkItem "ItemCompass"; this linkItem "ItemWatch"; this linkItem "ItemRadioAcreFlagged"; this linkItem "ItemcTab"; this linkItem "A3_GPNVG18_REC_BLK_TI"; comment "Set identity"; this setFace "WhiteHead_05"; this setSpeaker "ace_novoice";'><span uk-icon="icon: pull"></span> Copiar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+          
     </body>
 </html>
